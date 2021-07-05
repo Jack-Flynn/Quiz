@@ -1,13 +1,8 @@
-#Define Variables
-name = input("What is your name?")
+#Ask users for a number
+get_number = int(input("Choose a number? "))
 
+#Multiply the number by 5
+times_five = get_number * 5
 
-#Get some random numbers
-from random import randint
-# generate some integers
-for _ in range(1):
-	winnings = randint(1, 10)
-
-#Greet the user
-print("Hello {} how do you feel playing Sandbox!".format(name))
-print("That wasn't a question because we own your life!")
+#Output the result
+print("{} times five is equal to {}".format(get_number, times_five))

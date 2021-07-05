@@ -6,3 +6,14 @@ times_five = get_number * 5
 
 #Output the result
 print("{} times five is equal to {}".format(get_number, times_five))
+
+
+#get name until exit code is entered
+
+name = ""
+while name.lower() != "xxx":
+	name = input("Who are you? ")
+	print(name)
+
+print()
+print("We are done!")

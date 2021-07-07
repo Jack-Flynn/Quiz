@@ -7,4 +7,4 @@ if show_instructions == "yes" or show_instructions == "y":
 elif show_instructions == "no" or show_instructions == "n":
     print("Display information")
 else:
-    print("Please answer yes or no")
+    print("Please answer yes / no")

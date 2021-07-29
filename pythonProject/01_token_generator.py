@@ -1,3 +1,4 @@
+# define function
 def token_generator():
     from random import randint
     # generate some integers

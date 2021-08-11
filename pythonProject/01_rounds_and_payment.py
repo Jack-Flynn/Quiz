@@ -1,5 +1,7 @@
-# Ask for payment
+# Show Rules
 print("Costs: $1 per round, up to 10 rounds")
+
+
 def num_check(question, low, high):
     error = "Please enter a whole number between 1 and 10"
 
@@ -8,7 +10,7 @@ def num_check(question, low, high):
         try:
             response = int(input(question))
 
-            if low < response  <= high:
+            if low < response <= high:
                 return response
 
             else:
@@ -16,5 +18,8 @@ def num_check(question, low, high):
 
         except ValueError:
             print(error)
+
+
+# Ask for payment
 how_much = num_check("How much would you like to play with?", 0, 10)
 

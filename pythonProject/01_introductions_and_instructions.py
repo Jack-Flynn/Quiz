@@ -1,5 +1,7 @@
 # Greet the user
 print("Welcome to Lucky Unicorns!")
+
+
 def yes_no(question):
     valid = False
     while not valid:
@@ -17,7 +19,8 @@ def yes_no(question):
             print("Please answer yes / no")
 # Main routine goes here...
 
-show_instructions = yes_no("Have you played the game before")
+
+show_instructions = yes_no("Have you played the game before?")
 
 if show_instructions == "no" or show_instructions == "n":
     print("You will pay a amount of up to $10 (with a minimum of $1)")
@@ -26,6 +29,5 @@ if show_instructions == "no" or show_instructions == "n":
     print("If your token is a unicorn then you win $5")
 
 elif show_instructions == "yes" or show_instructions == "y":
-    print("We will not show instructions")
+    print("OK! Moving on!")
 print()
-

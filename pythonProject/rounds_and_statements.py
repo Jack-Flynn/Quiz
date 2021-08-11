@@ -1,4 +1,4 @@
-# Balance function here
+# Functions here
 def num_check(question, low, high):
     error = "Please enter a whole number between 1 and 10"
 
@@ -16,6 +16,21 @@ def num_check(question, low, high):
         except ValueError:
             print(error)
 
+def token_generator():
+    global token
+    from random import randint
+    # generate some integers
+    for _ in range(1):
+        token = randint(1, 100)
+    if token <= 25:
+        print("Donkey")
+    elif 25 < token <= 50:
+        print("Horse")
+    elif 50 < token <= 75:
+        print("Zebra")
+    else:
+        print("Unicorn")
+
 
 # Ask for payment
 how_much = num_check("How much would you like to play with?", 0, 10)
@@ -32,6 +47,7 @@ while play_again != "quit":
     print()
     print("*** Round #{} ***".format(rounds_played))
     how_much -= 1
+    token_generator()
     print("Balance: ", how_much)
     print()
     if how_much <= 0:

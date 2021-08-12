@@ -22,11 +22,11 @@ def token_generator():
     # generate some integers
     for _ in range(1):
         token = randint(1, 100)
-    if token <= 25:
+    if token <= 50:
         print("Donkey")
-    elif 25 < token <= 50:
-        print("Horse")
     elif 50 < token <= 75:
+        print("Horse")
+    elif 75 < token <= 90:
         print("Zebra")
     else:
         print("Unicorn")
@@ -48,6 +48,14 @@ while play_again != "quit":
     print("*** Round #{} ***".format(rounds_played))
     how_much -= 1
     token_generator()
+    if token <= 50:
+        how_much += 0
+    elif 50 < token <= 75:
+        how_much += 0.5
+    elif 75 < token <= 90:
+        how_much += 0.5
+    else:
+        how_much += 5
     print("Balance: ", how_much)
     print()
     if how_much <= 0:

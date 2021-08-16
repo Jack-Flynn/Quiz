@@ -13,14 +13,15 @@ def yes_no(question):
             print("Please answer yes / no")
 
 def num_check(question, low, high):
-    error = "Please enter a whole number between 1 and 10"
+    error = "Please give a whole number between {} and {} as your response\n".format(low, high)
 
     valid = False
     while not valid:
         try:
-            response = int(input(question))
-            if low < response <= high:
-                return response
+            num_check.response = int(input(question))
+            if low <= num_check.response <= high:
+                yes_no("So you want {} rounds?".format(num_check.response))
+                return num_check.response
             else:
                 print(error)
         except ValueError:

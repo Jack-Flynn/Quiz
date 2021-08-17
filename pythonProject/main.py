@@ -3,23 +3,21 @@ def yes_no(question):
     valid = False
     while not valid:
         response = input(question).lower().strip()
-        if response == "yes" or response == "y":
-            response = "yes"
+        if response in yes:
             return response
-        elif response == "no" or response == "n":
-            response = "no"
+        elif response in no:
             return response
         else:
             print("Please answer yes / no")
 
 def num_check(question, low, high):
-    error = "Please give a whole number between {} and {} as your response\n".format(low, high)
+    error = "Please give a whole number between 1 and 10 as your response"
 
     valid = False
     while not valid:
         try:
             num_check.response = int(input(question))
-            if low <= num_check.response <= high:
+            if low < num_check.response <= high:
                 yes_no("So you want {} rounds?".format(num_check.response))
                 return num_check.response
             else:
@@ -42,19 +40,20 @@ def token_generator():
     else:
         print("What incredible luck! you got a Unicorn! You win 5 dollars!")
 
-
+yes = ["yes", "y"]
+no = ["no", "n"]
 # Greet the user
 print("Welcome to Lucky Unicorns!")
 
 show_instructions = yes_no("Have you played the game before?")
 
-if show_instructions == "no" or show_instructions == "n":
+if show_instructions in no:
     print("You will pay a amount of up to $10 (with a minimum of $1)")
     print("You will then be given a token")
     print("If your token is a donkey then, bad luck, you lose, but if it is a horse or a zebra then you win 50c")
     print("If your token is a unicorn then you win $5")
     print("OK! We are ready to continue now!")
-elif show_instructions == "yes" or show_instructions == "y":
+elif show_instructions in yes:
     print("OK! Moving on!")
 print()
 
@@ -85,7 +84,7 @@ while play_again != "quit":
     print("Balance: ", how_much)
     print()
 
-    if how_much <= 0:
+    if how_much <= 0.5:
         print("You have ran out of money and cannot play any more rounds!")
         break
 

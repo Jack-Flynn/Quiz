@@ -82,11 +82,11 @@ while play_again != "quit":
         how_much += 5
     print("Balance: ", how_much)
     print()
-
+# Finish if player has no money
     if how_much <= 0.5:
         print("You have ran out of money and cannot play any more rounds!")
         break
-
+# Finish if player types quit
     play_again = input("Press <Enter> to play again or type 'quit' to exit").lower().strip()
     if play_again == "quit":
         print("Exiting code!")

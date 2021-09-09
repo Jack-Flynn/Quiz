@@ -10,6 +10,7 @@ def yes_no(question):
         else:
             print("Please answer yes / no")
 
+
 def num_check(question, low, high):
     error = "Please give a whole number between 1 and 10 as your response"
 
@@ -23,6 +24,7 @@ def num_check(question, low, high):
                 print(error)
         except ValueError:
             print(error)
+
 
 def token_generator():
     global token
@@ -38,6 +40,7 @@ def token_generator():
         print("You got a Zebra! You win 50 cents!")
     else:
         print("What incredible luck! you got a Unicorn! You win 5 dollars!")
+
 
 yes = ["yes", "y"]
 no = ["no", "n"]
@@ -82,10 +85,12 @@ while play_again != "quit":
         how_much += 5
     print("Balance: ", how_much)
     print()
+
 # Finish if player has no money
     if how_much <= 0.5:
         print("You have ran out of money and cannot play any more rounds!")
         break
+
 # Finish if player types quit
     play_again = input("Press <Enter> to play again or type 'quit' to exit").lower().strip()
     if play_again == "quit":

@@ -18,7 +18,6 @@ def num_check(question, low, high):
         try:
             num_check.response = int(input(question))
             if low < num_check.response <= high:
-                yes_no("So you want {} rounds?".format(num_check.response))
                 return num_check.response
             else:
                 print(error)

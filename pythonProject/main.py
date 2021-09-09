@@ -36,7 +36,7 @@ def token_generator():
         print("Bad luck, you got a Donkey, you win nothing and lose nothing.")
     elif 50 < token <= 80:
         print("You got a Horse! You win 50 cents!")
-    elif 80 < token <= 95:
+    elif 80 < token <= 90:
         print("You got a Zebra! You win 50 cents!")
     else:
         print("What incredible luck! you got a Unicorn! You win 5 dollars!")

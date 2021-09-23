@@ -16,6 +16,7 @@ def yes_no(question):
         else:
             print("Please answer yes / no")
 
+
 print("\033[1;32;40m")
 
 # Store all values for yes and no

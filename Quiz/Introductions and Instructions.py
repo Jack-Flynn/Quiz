@@ -28,6 +28,8 @@ print("Welcome to placeholderquizname!")
 instructions = yes_no("Have you played this quiz before?")
 
 if instructions in no:
-    print("any details yet jack?")
+    print("You will be asked 5 questions. Please try to answer them as best you can. \n"
+          "If you get 3 questions wrong you will fail and have to try again. \n"
+          "and the most important instruction of all: Have fun!")
 elif instructions in yes:
     print("righty-ho moving on")

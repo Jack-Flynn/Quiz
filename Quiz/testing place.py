@@ -1,7 +1,5 @@
 def questions (question, answer):
-    global ticks
-    global strikes
-    global questions_answered
+    global ticks, strikes, questions_answered
     error = "please enter a number"
 
     try:
@@ -22,7 +20,7 @@ def questions (question, answer):
 ticks = 0
 strikes = 0
 questions_answered = 0
-while strikes < 3 and questions_answered != 5:
+while strikes != 3 and questions_answered != 5:
     question1 = questions("Question 1:\n""1: a\n""2: b\n""3: c", 1)
     question2 = questions("Question 2:\n""1: a\n""2: b\n""3: c", 1)
     question3 = questions("Question 3:\n""1: a\n""2: b\n""3: c", 1)

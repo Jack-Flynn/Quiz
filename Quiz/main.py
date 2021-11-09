@@ -56,7 +56,7 @@ if instructions in no:
     print("You will be asked 5 questions with 3 possible choices. answer them with '1' '2' or '3'. \n"
           "If you get 3 questions wrong you will fail and have to try again. \n"
           "And the most important instruction of all: (try and)have fun! \n"
-          "Oh and I thought I might mention that this quiz is rather challenging and unforgiving.")
+          "Oh and I thought I might mention that this quiz is rather challenging and unforgiving. \n")
 elif instructions in yes:
     print("righty-ho moving on")
 

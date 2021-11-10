@@ -58,7 +58,7 @@ if instructions in no:
           "And the most important instruction of all: (try and)have fun! \n"
           "Oh and I thought I might mention that this quiz is rather challenging and unforgiving. \n")
 elif instructions in yes:
-    print("righty-ho moving on")
+    print("righty-ho moving on \n")
 
 # Main Routine here
 
